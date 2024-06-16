@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class Atm {
+public class Atm{
     private BankAccount account;
 
-    public ATM(BankAccount account) {
+    public Atm(BankAccount account) {
         this.account = account;
     }
 
@@ -57,9 +57,10 @@ public class Atm {
         return account.getBalance();
     }
 
+
     public static void main(String[] args) {
         BankAccount account = new BankAccount(1000.00); // Initial balance of $1000
-        ATM atm = new ATM(account);
+        Atm atm = new Atm(account);
 
         while (true) {
             atm.displayMenu();
@@ -96,3 +97,6 @@ class BankAccount {
         return balance;
     }
 }
+
+
+
